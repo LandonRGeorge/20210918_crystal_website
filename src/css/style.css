@@ -79,6 +79,7 @@ ul {
 
 .links ul li:hover {
   border-bottom: 2px solid var(--clr-purple);
+  transform: scale(1.2);
 }
 
 main {
@@ -178,7 +179,10 @@ footer span {
 
 .head-photo {
   width: 150px;
-  border-radius: 40%;
+  height: auto;
+  border-radius: 50%;
+  background-position: center;
+  background-size: contain;
 }
 
 .text {
@@ -193,4 +197,8 @@ footer span {
   display: flex;
   font-size: 2.5rem;
   font-family: cursive;
+}
+
+button {
+  cursor: pointer;
 }
