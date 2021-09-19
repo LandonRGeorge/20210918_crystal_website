@@ -3,6 +3,7 @@
   --clr-primary: #5d971b;
   --clr-off-white: #f8f8f8;
   --clr-grey: #514e49;
+  --clr-purple: #67174b;
 }
 
 * {
@@ -73,6 +74,11 @@ ul {
 
 .links ul li {
   margin-left: 20px;
+  cursor: pointer;
+}
+
+.links ul li:hover {
+  border-bottom: 2px solid var(--clr-purple);
 }
 
 main {
@@ -93,12 +99,18 @@ footer span {
 }
 
 .btn-contact-me {
-  background-color: var(--clr-primary);
-  color: var(--clr-white);
+  background-color: var(--clr-white);
+  color: black;
   padding: 10px 20px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid black;
   margin-top: 20px;
+}
+
+.btn-contact-me:hover {
+  background-color: var(--clr-purple);
+  transform: scale(1.1);
+  color: white;
 }
 
 .about {
@@ -130,6 +142,12 @@ footer span {
   padding: 10px 20px;
   border-radius: 5px;
   margin-top: 30px;
+}
+
+.btn-learn-more:hover {
+  transform: scale(1.1);
+  background-color: var(--clr-purple);
+  color: var(--clr-white);
 }
 
 .content {
