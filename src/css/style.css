@@ -29,14 +29,17 @@
 
 .hero h2 {
   font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .hero h3 {
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .hero h4 {
   font-size: 1.5 rem;
+  margin-bottom: 10px;
 }
 
 a {
@@ -58,22 +61,25 @@ ul {
   padding: 0 30px;
 }
 
-.contact-info ul li {
+.contact-info li {
   margin-left: 20px;
   color: white;
 }
 
 .links {
   background-color: var(--clr-white);
-  height: 100px;
+  /* height: 100px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
 }
 
-.links ul li {
-  margin-left: 20px;
+.links ul {
+  column-gap: 20px;
+}
+
+.links li {
   cursor: pointer;
 }
 
@@ -93,10 +99,12 @@ footer {
   justify-content: center;
   align-items: center;
   color: var(--clr-white);
+  white-space: nowrap;
 }
 
-footer span {
-  margin-left: 20px;
+.footer ul {
+  display: flex;
+  column-gap: 20px;
 }
 
 .btn-contact-me {
@@ -120,7 +128,7 @@ footer span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 30px;
+  padding: 30px;
 }
 
 .about h1 {
@@ -136,13 +144,16 @@ footer span {
   content: " -";
 }
 
+/* .about h2 {
+  margin: 0;
+} */
+
 .btn-learn-more {
   border: 1px solid var(--clr-grey);
   background-color: transparent;
   color: var(--clr-grey);
   padding: 10px 20px;
   border-radius: 5px;
-  margin-top: 30px;
 }
 
 .btn-learn-more:hover {
@@ -171,16 +182,15 @@ footer span {
 }
 
 .content-main {
-  padding-top: 30px;
+  margin: 30px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
 .head-photo {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
+  /* width: 150px;
+  height: auto; */
   background-position: center;
   background-size: contain;
 }
@@ -201,4 +211,74 @@ footer span {
 
 button {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 730px) {
+  .content-main {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .links li {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .contact-info {
+    justify-content: center;
+    height: unset;
+  }
+
+  /* .name {
+    font-size: 2rem;
+  } */
+
+  .hero h2,
+  h3,
+  h4 {
+    text-align: center;
+  }
+
+  .hero h3 {
+    font-size: 2rem;
+  }
+
+  .head-photo {
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .about {
+    padding: 30px 20px;
+  }
+
+  .text {
+    margin-left: 0;
+  }
+
+  .footer {
+    height: unset;
+  }
 }
