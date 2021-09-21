@@ -85,7 +85,6 @@ ul {
 
 .links ul li:hover {
   border-bottom: 2px solid var(--clr-purple);
-  transform: scale(1.2);
 }
 
 main {
