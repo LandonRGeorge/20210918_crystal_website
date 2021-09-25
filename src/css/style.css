@@ -6,10 +6,20 @@
   --clr-purple: #67174b;
 }
 
-* {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
 }
 
 .hero {
@@ -99,6 +109,9 @@ footer {
   align-items: center;
   color: var(--clr-white);
   white-space: nowrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer ul {
@@ -165,6 +178,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1200px;
 }
 
 .welcome {
@@ -226,7 +240,6 @@ button {
   }
 
   .links li {
-    flex-basis: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
