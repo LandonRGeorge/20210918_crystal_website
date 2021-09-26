@@ -21,11 +21,44 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--clr-off-white);
+}
+
+.contact-info {
+  background-color: var(--clr-grey);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+}
+
+.contact-info li {
+  color: var(--clr-white);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  color: black;
+  border-bottom: 1px solid lightgrey;
+}
+
+.navbar li {
+  color: black;
+  text-align: center;
+}
+
+.navbar li:hover {
+  color: var(--clr-purple);
 }
 
 .hero {
   width: 100%;
-  height: 500px;
+  min-height: 300px;
   background-image: url("../images/photo-1582174543967-f059e6f4f7ce.jpeg");
   background-position: center;
   background-size: cover;
@@ -33,91 +66,33 @@ body {
   color: var(--clr-white);
   text-shadow: 1px 1px 1px black;
   display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 10px;
+  text-align: center;
+  padding: 20px 0;
 }
 
-.hero h2 {
+.hero-content h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
   font-size: 2rem;
-  margin-bottom: 10px;
 }
 
-.hero h3 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero h4 {
-  font-size: 1.5 rem;
-  margin-bottom: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: unset;
-}
-
-ul {
-  display: flex;
-  list-style-type: none;
-}
-
-.contact-info {
-  background-color: var(--clr-grey);
-  height: 40px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 30px;
-}
-
-.contact-info li {
-  margin-left: 20px;
-  color: white;
-}
-
-.links {
-  background-color: var(--clr-white);
-  /* height: 100px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  height: 40px;
-}
-
-.links ul {
-  column-gap: 20px;
-}
-
-.links li {
-  cursor: pointer;
-}
-
-.links ul li:hover {
-  border-bottom: 2px solid var(--clr-purple);
-  color: var(--clr-purple);
-}
-
-main {
-  background-color: var(--clr-off-white);
-}
-
-footer {
-  background-color: var(--clr-grey);
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--clr-white);
-  white-space: nowrap;
-  width: 100%;
-}
-
-.footer ul {
-  display: flex;
-  column-gap: 20px;
+.hero-content h3,
+h4 {
+  font-size: 1.2rem;
 }
 
 .btn-contact-me {
@@ -129,19 +104,30 @@ footer {
   margin-top: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.horizontal-list {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  margin: 5px 20px;
+}
+
 .btn-contact-me:hover {
   background-color: var(--clr-purple);
-  transform: scale(1.1);
   color: white;
 }
 
 .about {
-  background-color: var(--clr-off-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
 }
 
 .about h1 {
@@ -149,17 +135,29 @@ footer {
   font-size: 1.5rem;
 }
 
-.about h1:before {
-  content: "- ";
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.about h1:after {
-  content: " -";
+.about h1 {
+  font-size: 1.8rem;
 }
 
-/* .about h2 {
-  margin: 0;
-} */
+.about-content-main {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.head-photo {
+  /* width: 150px;
+  height: auto; */
+  background-position: center;
+  background-size: contain;
+}
 
 .btn-learn-more {
   border: 1px solid var(--clr-grey);
@@ -170,128 +168,73 @@ footer {
 }
 
 .btn-learn-more:hover {
-  transform: scale(1.1);
   background-color: var(--clr-purple);
   color: var(--clr-white);
+  border-color: white;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1200px;
-}
-
-.welcome {
-  text-align: center;
-  line-height: 2rem;
-}
-
-.welcome h1 {
-  font-size: 1.8rem;
-}
-
-.welcome h2 {
-  font-size: 1.2rem;
-}
-
-.content-main {
-  margin: 30px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.head-photo {
-  /* width: 150px;
-  height: auto; */
-  background-position: center;
-  background-size: contain;
-}
-
-.text {
-  margin-left: 30px;
-}
-
-.text p {
-  margin-bottom: 20px;
-}
-
-.name {
-  display: flex;
-  font-size: 2.5rem;
-  font-family: cursive;
+p {
+  line-height: 1.5em;
+  margin: 10px;
 }
 
 button {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 730px) {
-  .content-main {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-  }
+footer {
+  background-color: var(--clr-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-white);
+  white-space: nowrap;
+  width: 100%;
+  margin-top: auto;
+}
 
-  .links {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
+.address {
+  display: flex;
+  justify-content: center;
+  margin: 10px 30px;
+  flex-wrap: wrap;
+}
 
-  .links li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+.address li {
+  text-align: center;
+}
 
-  li {
-    margin: 10px 0;
-    text-align: center;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.main-content {
+  margin: 30px;
+  max-width: 1000px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
   .contact-info {
     justify-content: center;
-    height: unset;
   }
 
-  /* .name {
-    font-size: 2rem;
-  } */
-
-  .hero h2,
-  h3,
-  h4 {
-    text-align: center;
+  .about-content-main {
+    flex-direction: column;
+    row-gap: 20px;
   }
 
-  .hero h3 {
-    font-size: 2rem;
-  }
-
-  .head-photo {
-    margin-bottom: 20px;
-  }
-
-  .hero {
-    height: 300px;
-  }
-
-  .about {
-    padding: 30px 20px;
-  }
-
-  .text {
-    margin-left: 0;
-  }
-
-  .footer {
-    height: unset;
+  .address {
+    flex-direction: column;
   }
 }
