@@ -18,12 +18,16 @@ html {
   box-sizing: inherit;
 }
 
-body {
+/* body {
   width: 100%;
-}
+} */
 
 main {
-  margin-top: 40px;
+  margin-top: 70px;
+}
+
+h1 {
+  text-align: center;
 }
 /* 
 body {
@@ -69,6 +73,11 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.image-crystal {
+  object-fit: cover;
+  height: 300px;
 }
 /*
 
