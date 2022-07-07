@@ -1,0 +1,24 @@
+{
+  "name": "20210918_crystal_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "footer.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LandonRGeorge/20210918_crystal_website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LandonRGeorge/20210918_crystal_website/issues"
+  },
+  "homepage": "https://github.com/LandonRGeorge/20210918_crystal_website#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}

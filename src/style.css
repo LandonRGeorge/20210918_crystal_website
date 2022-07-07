@@ -1,0 +1,58 @@
+:root {
+    --clr-white: #fff;
+    --clr-primary: #5d971b;
+    --clr-off-white: #f8f8f8;
+    --clr-grey: #514e49;
+    --clr-purple: #67174b;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    font-family: 'PT Serif', serif;
+}
+
+main {
+    margin-top: 70px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.hero {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+.img5 {
+    background-image: url("images/vines.jpg")
+}
+
+
+.image-crystal {
+    /* object-fit: cover; */
+    /* height: 100px;
+    width: 100px; */
+}
+
+footer a {
+    text-decoration: none;
+    color: #212529;
+}
