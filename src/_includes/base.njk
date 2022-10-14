@@ -24,7 +24,9 @@
 <body class="d-flex flex-column min-vh-100">
     <div class="wrapper flex-grow-1">
         {% include './header.njk' %}
+
         <main>
+            {% include './banner.njk' %}
             {% include './hero.njk' %}
             {{ content | safe }}
         </main>
